@@ -23,13 +23,13 @@ python tic_tac_toe.py
 ## Project Structure
 1. `Tic_tac_toe.py`: Contains the main function instantiating a game controller.
 2. `GameController.py`: Class for managing the game, including players, the board, and scores.
-3. `Player`: Class for information such as victories, mark, and a message to provide feedback for any invalid move.
-4. `Board`: Class for board information, including cells, guide, and functions for understanding the state of the board.
+3. `Player.py`: Class for information such as victories, mark, and a message to provide feedback for any invalid move.
+4. `Board.py`: Class for board information, including cells, guide, and functions for understanding the state of the board.
 2. `README.md`: Project documentation.
 
 ## Dependencies
 This project uses the following standard Python libraries:
 
-`os`: For interacting with the operating system and clearing the terminal.
-`sys`: For manipulating standard input and output flow.
-`time`: For introducing pauses in the game execution.
+* `os`: For interacting with the operating system and clearing the terminal.
+* `sys`: For quit the game.
+* `time`: For introducing pauses in the game execution.

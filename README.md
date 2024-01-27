@@ -6,7 +6,7 @@ This project implements the classic Tic Tac Toe game in Python, utilizing object
 ## Installation
 1. Clone the repository.
    ```bash
-   git clone https://github.com/your-username/tic-tac-toe-python.git
+   git clone https://github.com/your-username/Tic-tac-toe.git
 
 ## Navigate to the project directory
 cd tic-tac-toe-python

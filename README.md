@@ -9,10 +9,10 @@ This project implements the classic Tic Tac Toe game in Python, utilizing object
    git clone https://github.com/your-username/Tic-tac-toe.git
 
 ## Navigate to the project directory
-cd tic-tac-toe-python
+cd Tic-tac-toe
 
 ## Run the game
-python tic_tac_toe.py
+python Tic_tac_toe.py
 
 ## Usage
 1. Start the game by running the tic_tac_toe.py script.

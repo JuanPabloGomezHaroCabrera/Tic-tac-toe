@@ -7,10 +7,11 @@ class Player:
     def Winner(self):
         self.wins += 1
 
-    def SetMessage(self, message):
+    def SetMessage(self, message: str):
         self.message = message
-
-    def Play(self):
+    
+    #* Give feedback if it is neccessary to the player and waits for its move
+    def Play(self) -> str:
         print(self.message)
         throw = input(self.mark + " turn player: ")
         return throw

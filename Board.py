@@ -7,16 +7,17 @@ class Board:
     def Reset(self):
         for index in self.board:
             self.board[index] = ' '
-            
-    def Check(self, index):
+
+    #* Check if the index exists in the board and if it is empty
+    def Check(self, index: str) -> str:
         if index in self.board and self.board[index] == ' ':
             return "DONE"
         return "INVALID INPUT"
 
-    def Log(self, index, mark):
+    def Log(self, index: str, mark: str):
         self.board[index] = mark
 
-    def IsVictory(self, mark):
+    def IsVictory(self, mark: str) -> bool:
         if ((self.board['1'] == mark and self.board['2'] == mark and self.board['3'] == mark) or 
         (self.board['4'] == mark and self.board['5'] == mark and self.board['6'] == mark) or 
         (self.board['7'] == mark and self.board['8'] == mark and self.board['9'] == mark) or 
@@ -28,7 +29,7 @@ class Board:
             return True
         return False
 
-    def IsGameOver(self):
+    def IsGameOver(self) -> bool:
         if ' ' not in self.board.values():
             return True
         return False

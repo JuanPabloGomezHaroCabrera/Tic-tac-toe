@@ -4,7 +4,7 @@ class Board:
                       '6': ' ', '7': ' ', '8': ' ', '9': ' '}
         self.guide = "\tGUIDE\n1 2 3\n4 5 6\n7 8 9\n"
         
-    def Reset(self):
+    def Reset(self) -> None:
         for index in self.board:
             self.board[index] = ' '
 
@@ -14,7 +14,7 @@ class Board:
             return "DONE"
         return "INVALID INPUT"
 
-    def Log(self, index: str, mark: str):
+    def Log(self, index: str, mark: str) -> None:
         self.board[index] = mark
 
     def IsVictory(self, mark: str) -> bool:
@@ -34,7 +34,7 @@ class Board:
             return True
         return False
 
-    def PrintBoard(self):
+    def PrintBoard(self) -> None:
         print(self.guide)
         print(self.board['1'] + "|" + self.board['2'] + "|" + self.board['3'])
         print("-+-+-")

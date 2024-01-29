@@ -8,7 +8,7 @@ class GameController:
         self.p1starts = 0
         self._board = Board()
 
-    def Start(self):
+    def Start(self) -> None:
         self.UpdateBoard()
         # While game is running
         while True:
@@ -37,14 +37,13 @@ class GameController:
             else:
                 self.p1starts = 1
 
-
-    def GameOver(self):
+    def GameOver(self) -> None:
         print("\nGAME OVER")
         time.sleep(5)
         self._board.Reset()
         self.UpdateBoard()
 
-    def Victory(self, mark):
+    def Victory(self, mark) -> None:
         print("\n" + mark + " WINS")
         time.sleep(5)
         if mark == 'X':
@@ -54,11 +53,11 @@ class GameController:
         self._board.Reset()
         self.UpdateBoard()
 
-    def Exit(self):
+    def Exit(self) -> None:
         sys.exit()
 
     #* Clear the screen and show the updated board
-    def UpdateBoard(self):
+    def UpdateBoard(self) -> None:
         os.system('clear')
-        print('Player X: ', str(self.players[0].wins), '   Player O: ', str(self.players[1].wins), '   0 para salir')
+        print('Player X: ', str(self.players[0].wins), '   Player O: ', str(self.players[1].wins), '   0: Exit')
         self._board.PrintBoard()

@@ -6,7 +6,7 @@ This project implements the classic Tic Tac Toe game in Python, utilizing object
 ## Installation
 1. Clone the repository.
    ```bash
-   git clone https://github.com/your-username/Tic-tac-toe.git
+   git clone https://github.com/JuanPabloGomezHaroCabrera/Tic-tac-toe.git
 
 ## Navigate to the project directory
 cd Tic-tac-toe
@@ -23,7 +23,7 @@ python Tic_tac_toe.py
 ## Project Structure
 1. `Tic_tac_toe.py`: Contains the main function instantiating a game controller.
 2. `GameController.py`: Class for managing the game, including players, the board, and scores.
-3. `Player.py`: Class for information such as victories, mark, and a message to provide feedback for any invalid move.
+3. `Player.py`: Class for information such as wins, mark, and a message to provide feedback for any invalid move.
 4. `Board.py`: Class for board information, including cells, guide, and functions for understanding the state of the board.
 2. `README.md`: Project documentation.
 

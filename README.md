@@ -1,4 +1,4 @@
-# Tic Tac Toe Game in Python
+# Tic Tac Toe Game
 
 ## Description
 This project implements the classic Tic Tac Toe game in Python, utilizing object-oriented programming. The game runs in the terminal and allows two players to compete against each other.
